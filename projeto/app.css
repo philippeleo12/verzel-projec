@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background: rgb(80,168,195);
+    background: linear-gradient(90deg, rgba(80,168,195,1) 1%, rgba(0,87,121,1) 100%);
+  }
+  
+  .nav__links, .nav__link{
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 13vh;
+    width: 85%;
+  }
+  
+  .logo__container {
+    flex: 1;
+  }
+  
+  nav {
+    flex: .55;
+  }
+  
+  .nav__links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .nav__link {
+    color: #fff;
+    font-size: .90rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  
+  #btn__sign {
+    background: #005779;
+    padding: 8px 25px 8px 25px;
+    border-radius: 2rem;
+    transition: all .3s ease-in-out;
+  }
+  
+  #btn__sign:hover {
+    background: #03719c;
+  }
+  
+  .apresentation {
+    width: 85%;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .introduction {
+    display: flex;
+    align-items: center;
+    height: 75vh;
+  }
+  
+  .intro__text {
+    flex: 1;
+  }
+  
+  .intro__text h1 {
+    color: #fff;
+    font-size: 3.5rem;
+  }
+  
+  .intro__text p {
+    color: #fff;
+    font-weight: 300;
+    font-size: .85rem;
+  }
+  
+  .cover__img {
+    flex: .85;
+  }
+  
+  @media screen and (max-width: 1024px) {
+      .intro__text h1 {
+          font-size: 2.1rem;
+      }
+
+      
+      .cover__img img {
+        height: 35vh;
+        margin-top: 5vh;
+    }
+  } 
+  
+  @media screen and (max-width: 900px) {
+    .nav__links {
+        display: none;
+    }
+  
+    .introduction {
+        flex-direction: column-reverse;
+    }
+  
+    .cover__img img {
+        height: 40vh;
+        margin-top: 5vh;
+    }
+  
+    .intro__text {
+        text-align: center;
+    }
+  
+    .intro__text h1 {
+        font-size: 2.1rem;
+    }
+  
+    .intro__text p {
+        font-size: .85rem;
+        margin-top: 2vh;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .cover__img img {
+        height: 25vh;
+    }
+  
+    .intro__text h1 {
+        font-size: 1.5rem;
+    }
+  
+    .intro__text p {
+        font-size: .75rem;
+    }
+  }

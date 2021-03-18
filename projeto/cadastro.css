@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif !important;
+}
+
+
+
+.nav__links, .nav__link{
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 13vh;
+    width: 100%;
+    background: #F0F0F0;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+.logo__container {
+    flex: 1;
+    padding-left: 15vh;
+}
+
+nav {
+    flex: .55;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav__link {
+    color: #686868;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+#btn__sign {
+    background: #005779;
+    padding: 8px 25px 8px 25px;
+    border-radius: 2rem;
+    color: #ffffff;
+    transition: all .3s ease-in-out;
+
+}
+
+#btn__sign:hover {
+    background: #03719c;
+
+}
+
+.container {
+    margin: auto;
+    margin-top: 7vh;
+    padding: 2rem;
+    background: #f0f0f0;
+    max-width: 60%;
+    border-radius: 2rem;
+}
+
+.intro-text {
+    text-align: center;
+    color: #005779;
+}
+
+.intro-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 50vh;
+    width: 35%;
+    margin-top: 3vh;
+}
+
+input {
+    border-radius: 2rem !important;
+    width: 250px;
+    height: 40px;
+    padding: 1.2rem;
+    margin: .85rem;
+    border: none !important;
+    background: #6868683d;
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn__sign {
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.btn_cta {
+    width: 330px;
+    height: 35px;
+    border-radius: 20px;
+    background: #005779;
+    border: none;
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all .3s ease-in-out;
+}
+
+.btn_cta:hover {
+    background: #03719c;
+}
+
+.sign_intro h1, .sign_intro-1 h1 {
+    font-size: .80rem;
+    padding-left: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        max-width: 100% !important;
+        border-radius: 0 !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav__links {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn_cta {
+        margin-top: 5vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .introduction {
+        flex-direction: column;
+        margin-top: 25vh;
+    }
+
+    .btn_cta {
+        margin-top: 23vh;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .intro-text h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .intro-text h1 {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .intro-text h1 {
+        font-size: 2rem;
+    }
+}
